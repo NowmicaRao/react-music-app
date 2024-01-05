@@ -86,7 +86,7 @@ const ArtistDetails = (props) => {
 
       <div className={selectedSong.length ? "lyrics" : "new"}>
         {selectedSong.length ? (
-          (selectedSong[selectedSong.length !== 1 ? selectedArtistIndex : 0].songs || selectedSong[selectedSong.length !== 1 ? selectedArtistIndex: 0].song) &&
+          (selectedSong[0].songs || selectedSong[0].song) &&
           selectedArtistIndex !== null ? (
             selectedSong.map((ele) => (
               <div className="song">
